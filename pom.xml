@@ -23,7 +23,6 @@
 		<connection>scm:git:git@github.com:ziplet/ziplet.git</connection>
 		<developerConnection>scm:git:git@github.com:ziplet/ziplet.git</developerConnection>
 		<url>git@github.com:ziplet/ziplet.git</url>
-	  <tag>HEAD</tag>
   </scm>
 	<developers>
 		<developer>
@@ -122,9 +121,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9.1</version>
+				<version>3.2.0</version>
 				<configuration>
 					<maxmemory>2048m</maxmemory>
+					<source>1.8</source>
+					<doclint>none</doclint>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -217,7 +218,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.9.1</version>
+						<version>3.2.0</version>
 						<executions>
 							<execution>
 								<id>attach-javadocs</id>
@@ -226,6 +227,10 @@
 								</goals>
 							</execution>
 						</executions>
+						<configuration>
+							<source>1.8</source>
+							<doclint>none</doclint>
+						</configuration>
 					</plugin>
 				</plugins>
 			</build>
