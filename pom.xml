@@ -85,13 +85,12 @@
 
 	</dependencies>
 
-
-	<!-- Maven Central -->
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
+		<repository>
+			<id>bintray-f43nd1r-maven</id>
+			<name>f43nd1r-maven</name>
+			<url>https://api.bintray.com/maven/f43nd1r/maven/ziplet/;publish=1</url>
+		</repository>
 	</distributionManagement>
 
 	<build>
