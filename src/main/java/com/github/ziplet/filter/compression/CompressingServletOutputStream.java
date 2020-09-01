@@ -116,7 +116,7 @@ final class CompressingServletOutputStream extends ServletOutputStream {
     }
 
     void abortCompression() throws IOException {
-        assert thresholdOutputStream == null;
+        //assert thresholdOutputStream == null;
         // remember that this was called, in case thresholdOutputStream has not been set up yet,
         // so that when it is we can invoke forceOutputStream1()
         checkWriteState();
